@@ -1,0 +1,538 @@
+@charset "utf-8";
+/* CSS Document */
+.sky_bar{
+	margin: 0px;
+	height: 72px;
+	width: auto;
+	display: block;
+	background-image: url(../images/sky_bar/sky_bar_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.sky_bar_container{
+	height: auto;
+	width: 1180px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.login_tb_1{
+	display: block;
+	float: left;
+	height: auto;
+	width: auto;
+	padding-right: 4px;
+	line-height: 22px;
+	padding-top: 6px;
+}
+.login_tb_2{
+	display: block;
+	float: left;
+	height: auto;
+	width: auto;
+	padding-right: 4px;
+	line-height: 22px;
+	padding-top: 6px;
+}
+.login_tb_3{
+	display: block;
+	float: left;
+	height: auto;
+	width: auto;
+	padding-right: 4px;
+	padding-top: 6px;
+}
+.divider{
+	display: block;
+	float: left;
+	background-image: url(../images/sky_bar/divider.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 2px;
+	height: 71px;
+}
+.divider_r{
+	display: block;
+	float: right;
+	background-image: url(../images/sky_bar/divider.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 2px;
+	height: 71px;
+}
+
+/******會員登入區塊******/
+.input_account_n{
+	width: 170px;
+	border: 1px solid #e6be5e;
+	font-size: 12px;
+	padding-right: 6px;
+	padding-left: 24px;
+	color: #e6be5e;
+	line-height: 22px;
+	height: 22px;
+	background-color: #1a1a1a;
+	background-image: url(../images/common/membrer_info/input_icon_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-bottom: 6px;
+}
+.input_password_n{
+	width: 170px;
+	border: 1px solid #e6be5e;
+	font-size: 12px;
+	padding-right: 6px;
+	padding-left: 24px;
+	color: #e6be5e;
+	line-height: 22px;
+	height: 22px;
+	background-color: #1a1a1a;
+	background-image: url(../images/common/membrer_info/input_icon_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.input_captcha_n{
+	width: 150px;
+	border: 1px solid #e6be5e;
+	font-size: 12px;
+	padding-right: 6px;
+	padding-left: 26px;
+	color: #e6be5e;
+	line-height: 22px;
+	height: 22px;
+	background-color: #1a1a1a;
+	background-image: url(../images/common/membrer_info/input_icon_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-bottom: 6px;
+}
+/*
+.area_verifyimg{
+	float: left;
+	width: auto;
+	height: auto;
+	display: block;
+}
+.area_verifyimg img{
+	display: block;
+}
+.verifyimg{
+  float: left;
+	width: auto;
+	height: auto;
+}
+.area_verifyimg {
+  background:url(../images/common/verifyimg/verifyimg.jpg);
+  font-family:Arial;
+  font-style:italic;
+  color:white;
+  font-size:30px;
+  border:0;
+  padding:2px 3px;
+  /*letter-spacing:3px;
+  font-weight:bolder;             
+  float:left;            
+  cursor:pointer;
+  width:70px;
+  height:28px;
+  line-height:60px;
+  text-align:center;
+  vertical-align:middle;
+}
+*/
+.area_verifyimg {
+  background: url(../images/common/verifyimg/verifyimg.jpg);
+  font-family: Arial;
+  /* font-style: italic; */
+  color: white;
+  font-size: 16px;
+  border: 0;
+  padding-top: 5px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  float: left;
+  cursor: pointer;
+  width: 70px;
+  height: 28px;
+  /* line-height: 60px; */
+  text-align: center;
+  vertical-align: middle;
+}
+.cookie {
+	float: left;
+	width: 80px;
+	height: auto;
+	line-height: 22px;
+	color: #e6be5e;
+	display: block;
+}
+.checkbox_l {
+	width: auto;
+	float: left;
+	display: block;
+}
+.checkbox_n {
+	font-size: 12px;
+	color: #e6be5e;
+	line-height: 22px;
+	height: auto;
+	width: auto;
+	margin-top: 5px;
+}
+.checkbox_txt {
+	font-size: 12px;
+	color: #e6be5e;
+	line-height: 22px;
+	height: auto;
+	width: 50px;
+	float: left;
+	display: block;
+}
+
+/***********/
+.gowin_login {
+	float: left;
+	display: block;
+	height: auto;
+	width: auto;
+	padding-right: 8px;
+	padding-left: 14px;
+}
+.id_info {
+	float: left;
+	display: block;
+	line-height: 43px;
+	height: 43px;
+	margin: 0px;
+	padding-left: 8px;
+	color: #F00;
+	padding-right: 8px;
+}
+.sky_bar_btn_login {
+	width: auto;
+	float: left;
+	height: auto;
+	margin-right: 2px;
+}
+.sky_bar_btn_login a {
+	width: 60px;
+	background-image: url(../images/sky_bar/btn_login.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	float: left;
+	height: 60px;
+}
+.sky_bar_btn_login a:hover {
+	width: 60px;
+	background-image: url(../images/sky_bar/btn_login.png);
+	background-repeat: no-repeat;
+	background-position: left -60px;
+	height: 60px;
+}
+.sky_bar_btn_logout {
+	width: auto;
+	float: left;
+	margin-left: 9px;
+	margin-top: 8px;
+	height: auto;
+}
+.sky_bar_btn_logout a {
+	width: 43px;
+	background-image: url(../images/sky_bar/btn_logout.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	float: left;
+	height: 27px;
+}
+.sky_bar_btn_logout a:hover {
+	width: 43px;
+	background-image: url(../images/sky_bar/btn_logout.png);
+	background-repeat: no-repeat;
+	background-position: left -27px;
+	height: 27px;
+}
+.sky_bar_btn_container_1 {
+    width: auto;
+	float: left;
+	display: block;
+}
+.sky_bar_btn_register {
+	width: auto;
+	height: auto;
+	margin-bottom: 2px;
+}
+.sky_bar_btn_register a {
+	width: 73px;
+	background-image: url(../images/sky_bar/btn_register.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	height: 29px;
+}
+.sky_bar_btn_register a:hover {
+	width: 73px;
+	background-image: url(../images/sky_bar/btn_register.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+	height: 29px;
+}
+.sky_bar_btn_forget_password {
+	width: auto;
+	height: auto;
+	margin-bottom: 2px;
+}
+.sky_bar_btn_forget_password a {
+	width: 73px;
+	background-image: url(../images/sky_bar/btn_forget_password.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	height: 29px;
+}
+.sky_bar_btn_forget_password a:hover {
+	width: 73px;
+	background-image: url(../images/sky_bar/btn_forget_password.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+	height: 29px;
+}
+/*******************/
+.jp_container{
+	float: right;
+	display: block;
+	height: 38px;
+	width: 329px;
+	background-image: url(../images/sky_bar/jp_title_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top: 33px;
+}
+div#abgne_marquee {
+	position: relative;
+	overflow: hidden;	/* 超出範圍的部份要隱藏 */
+	width: 329px;
+	height: 38px;
+}
+div#abgne_marquee ul, div#abgne_marquee li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+div#abgne_marquee ul {
+	position: absolute;
+	left: 0px;			/* 往後推個 30px */
+}
+div#abgne_marquee ul li {
+	display: block;
+	overflow: hidden;	/* 超出範圍的部份要隱藏 */
+	font-size:12px;
+	height: 33px;
+	line-height: 38px;
+	padding-left: 67px;
+	text-decoration: none;
+	background-color: #fff;
+	background-image: url(../images/sky_bar/jp_back.jpg);
+	background-repeat: no-repeat;
+	width: 262px;
+	padding-top: 5px;
+}
+div#abgne_marquee ul li.b1 {
+		background-position: 0px 0px;
+}
+div#abgne_marquee ul li.b2 {
+		background-position: 0px -38px;
+}
+div#abgne_marquee ul li.b3 {
+		background-position: 0px -76px;
+}
+div#abgne_marquee ul li.b4 {
+		background-position: 0px -114px;
+}
+div#abgne_marquee ul li.b5 {
+		background-position: 0px -152px;
+}
+div#abgne_marquee ul li.b6 {
+		background-position: 0px -190px;
+}
+div#abgne_marquee div.marquee_btn {
+		position: absolute;
+		cursor: pointer;
+}
+div#abgne_marquee div#marquee_next_btn {
+		left: 5px;
+}
+div#abgne_marquee div#marquee_prev_btn {
+		right: 5px;
+}
+.jp_info{
+	display: block;
+	height: 24px;
+	width: 250px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	background-color: #CCC;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+}
+/***************/
+
+.fb_share{
+	float: right;
+	display: block;
+	height: auto;
+	width: auto;
+	margin-left: 7px;
+	margin-top: 8px;
+}
+.google_share{
+	float: right;
+	display: block;
+	height: auto;
+	width: auto;
+	margin-top: 8px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+
+/*******登入後*******/
+.user_face{
+	display: block;
+	float: left;
+	height: auto;
+	width: auto;
+	margin-right: 16px;
+}
+.user_face img{display: block; border-radius: 99px;}
+.user_ifo_1{
+	display: block;
+	float: left;
+	height: auto;
+	width: auto;
+}
+.user_ifo_1 .user_name{
+	display: block;
+	height: 30px;
+	width: 116px;
+	line-height: 30px;
+}
+.user_ifo_1 .user_name a{
+	display: block;
+	height: auto;
+	width: 120px;
+	color: #e6be5e;
+}
+.user_ifo_1 .user_name a:hover{
+	display: block;
+	height: auto;
+	width: 120px;
+	color: #FFF;
+}
+.user_ifo_1 .btn_logout{display: block;}
+.user_ifo_1 .btn_logout a{
+	display: block;
+	background-image: url(../images/sky_bar/btn_logout.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 29px;
+	width: 47px;
+}
+.user_ifo_1 .btn_logout a:hover{
+	display: block;
+	background-image: url(../images/sky_bar/btn_logout.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+	height: 29px;
+	width: 47px;
+}
+.g_cash{
+	display: block;
+	background-image: url(../images/sky_bar/login_info_icon_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 30px;
+	width: 153px;
+	margin-bottom: 2px;
+	padding-left: 62px;
+	color: #e6be5e;
+	font-weight: bold;
+	margin-left: 12px;
+	line-height: 30px;
+}
+.g_cash .g_cash_txt{
+	display: block;
+	float: left;
+	padding-right: 7px;
+}
+.g_cash .btn_deposit{
+	display: block;
+	float: left;
+}
+.g_cash .btn_deposit a{
+	display: block;
+	background-image: url(../images/sky_bar/btn_deposit.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 29px;
+	width: 47px;
+}
+.g_cash .btn_deposit a:hover{
+	display: block;
+	background-image: url(../images/sky_bar/btn_deposit.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+	height: 29px;
+	width: 47px;
+}
+.lucky_gold{
+	display: block;
+	background-image: url(../images/sky_bar/login_info_icon_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 30px;
+	width: 153px;
+	margin-bottom: 2px;
+	padding-left: 62px;
+	color: #e6be5e;
+	font-weight: bold;
+	margin-left: 12px;
+	line-height: 30px;
+}
+.user_sort{
+	display: block;
+	background-image: url(../images/sky_bar/login_info_icon_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 30px;
+	width: 40px;
+	margin-bottom: 2px;
+	padding-left: 62px;
+	color: #e6be5e;
+	font-weight: bold;
+	margin-left: 12px;
+	line-height: 30px;
+}
+.user_lv{
+	display: block;
+	background-image: url(../images/sky_bar/login_info_icon_4.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 30px;
+	width: 40px;
+	margin-bottom: 2px;
+	padding-left: 62px;
+	color: #e6be5e;
+	font-weight: bold;
+	margin-left: 12px;
+	line-height: 30px;
+}

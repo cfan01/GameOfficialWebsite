@@ -1,0 +1,56 @@
+﻿<html data-livestyle-extension="available">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Gowin2 Demo</title>
+<link rel="stylesheet" href="/TemplateData/style.css">
+<link rel="shortcut icon" href="/TemplateData/favicon.ico" />
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/js/utils.js"></script>
+<script src="/TemplateData/UnityProgress.js"></script>
+
+<body style="margin:0;padding:0;">
+	<div id="Stage" style="position: absolute; height: 631px; width: 1274px; z-index: 0; right: auto; bottom: auto; background-color: rgb(255, 255, 255); overflow: hidden; text-overflow: clip; background-size: 100% 100%; left: 50%; top: 15%; margin-left: -700px;">
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="576px" width="1274px"></canvas>
+
+<div id="footer_logo" class="footer_logo" style="margin: 0; height: 55px; top: 75%; left: 47%; background-color: #000000;">
+ <img src="../images/footer/footer_demo.png" width="1000" height="55" id="gameLevel">
+</div>
+  </div>
+<style>
+#Stage{
+ margin:0 auto;
+}
+html{
+ overflow-x:hidden;
+}
+body{           
+ text-align: center;
+ background-color:#000;
+}
+</style>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/WebGL.data",
+    codeUrl: "Release/WebGL.js",
+    memUrl: "Release/WebGL.mem",
+  };
+</script>
+<script src="/Release/UnityLoader.js"></script>
+<script type="text/javascript">
+ var gbid=getParamValue('gbid');
+ var token=getParamValue('token');
+ //alert('gbid='+gbid);
+ //alert('token='+token);
+ function UnityCall(name) {
+ 	  //var gbid=getParamValue('gbid');
+ 	  //var token=getParamValue('token');
+     SendMessage(name, "setGameBarLoginInfo", gbid);//gbid
+     SendMessage(name, "setGameBarLoginInfo", token);//token
+ }
+</script>
+</body>
+</html>

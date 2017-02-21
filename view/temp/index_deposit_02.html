@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<!--<meta charset="utf-8">-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>《金鑽樂園2 GoWin》</title>
+<!--<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>-->
+<link rel="stylesheet" type="text/css" href="../css/sky_bar.css"/>
+<link rel="stylesheet" type="text/css" href="../css/templates_index.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../js/siteJS.js"></script>
+<script type="text/javascript" src="../js/flash.js"></script>
+<script type="text/javascript" src="../js/data.js"></script>
+<script type="text/javascript" src="../js/utils.js"></script>
+<script type="text/javascript" src="../js/vue.min.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
+<style type="text/css">
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body onload="createCode()">
+<!-------左右浮動廣告 begin------->
+<div class="toolbarframe1" id="ad1">
+  <div class="toolbar_img"> 
+    <div class="close_win"><a href="javascript:;" onClick="MM_showHideLayers('ad1','','hide')"></a></div>
+    <div class="btn_apk"><a href="javascript:;"></a></div>
+    <div class="btn_billing_container">
+      <a href="javascript:;" class="btn_billing_1"></a>
+      <a href="javascript:;" class="btn_billing_2"></a>
+      <a href="javascript:;" class="btn_billing_3"></a>
+      <a href="javascript:;" class="btn_billing_4"></a>
+    </div>
+    <br class="clearfloat" />
+  </div>
+</div>
+<!-------左右浮動廣告 end------->
+<!------平台工具列(登入前) begin-------->
+<div class="sky_bar">
+  <div class="sky_bar_container">
+    <div class="divider"></div>
+    <div id="loginModal" class="gowin_login">
+      <div class="login_tb_1">
+        <input type="text" required autocomplete="off" size="35" placeholder="帳號" class="input_account_n" id="input_account" tabindex="1" name="input_account" v-model="input_account"><br>
+        <input type="password" pattern="^[a-zA-Z0-9]{8,16}$" required autocomplete="off" maxlength="16" size="35" placeholder="密碼" class="input_password_n" id="input_password" tabindex="2" name="input_password" v-model="input_password"><br>
+      </div>
+      <div class="login_tb_2">
+        <input type="text" required pattern="\d{4}" autocomplete="off" size="10" maxlength="5" placeholder="驗證碼" class="input_captcha_n" id="input_captcha"  tabindex="4" value="" name="input_captcha" /><br>
+        <div class="area_verifyimg" id="area_verifyimg" onclick="createCode()" title="再按一次重新產生驗證碼"><!--<a href="#"><img src="../images/common/verifyimg/verifyimg.jpg" title="換一張圖"/></a>--></div>
+        <div class="cookie">
+          <div class="checkbox_l">
+            <form name="form1" method="post" action="">
+              <input type="checkbox" name="checkbox" id="checkbox" class="checkbox_n">
+            </form>
+          </div>
+          <div class="checkbox_txt">記住帳號</div><br class="clearfloat" />
+        </div>
+        <br class="clearfloat" />
+      </div>
+      <div class="login_tb_3">
+        <div class="sky_bar_btn_login"><a href="javascript:;" v-on:click="clickModalLogin" v-on:keyup.enter="clickModalLogin"></a></div>
+        <div class="sky_bar_btn_container_1">
+          <div class="sky_bar_btn_register"><!--<a href="index_create_account.html"></a>--><a href="javascript:;" onclick="load_page(createaccount)"></a></div>
+          <div class="sky_bar_btn_forget_password"><!--<a href="index_passwd_query.html"></a>--><a href="javascript:;" onclick="load_page(passwdquery)"></a></div>
+        </div>
+        <br class="clearfloat" />
+      </div>
+      <br class="clearfloat" />
+    </div>
+    <div class="divider"></div>
+    <div class="divider_r"></div>
+    <div class="google_share"><a href="javascript:;"><img src="../images/sky_bar/btn_share_2.png" alt="share to google+" border="0" onClick="javascript: void(window.open('http://plus.google.com/share?url='.concat(encodeURIComponent(location.href)) ));"></a></div>
+    <div class="fb_share"><a href="javascript:;"><img src="../images/sky_bar/btn_share_1.png" alt="share to facebook" border="0" onClick="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"></a></div>
+    <div class="divider_r"></div>
+
+    <div class="jp_container">
+      <div id="abgne_marquee">
+        <ul>
+          <li class="b1">
+            <div class="jp_info"><img src="../images/sky_bar/jp_nu_0.jpg"><img src="../images/sky_bar/jp_nu_1.jpg"><img src="../images/sky_bar/jp_nu_2.jpg"><img src="../images/sky_bar/jp_nu_3.jpg"><img src="../images/sky_bar/jp_nu_4.jpg"><img src="../images/sky_bar/jp_nu_5.jpg"><img src="../images/sky_bar/jp_nu_6.jpg"><img src="../images/sky_bar/jp_nu_7.jpg"><img src="../images/sky_bar/jp_nu_8.jpg"><img src="../images/sky_bar/jp_nu_9.jpg"></div>
+          </li>
+          <li class="b2">
+            <div class="jp_info"><img src="../images/sky_bar/jp_nu_0.jpg"><img src="../images/sky_bar/jp_nu_1.jpg"><img src="../images/sky_bar/jp_nu_2.jpg"><img src="../images/sky_bar/jp_nu_3.jpg"><img src="../images/sky_bar/jp_nu_4.jpg"><img src="../images/sky_bar/jp_nu_5.jpg"><img src="../images/sky_bar/jp_nu_6.jpg"><img src="../images/sky_bar/jp_nu_7.jpg"><img src="../images/sky_bar/jp_nu_8.jpg"><img src="../images/sky_bar/jp_nu_9.jpg"></div>
+          </li>
+          <li class="b3">
+            <div class="jp_info"><img src="../images/sky_bar/jp_nu_0.jpg"><img src="../images/sky_bar/jp_nu_1.jpg"><img src="../images/sky_bar/jp_nu_2.jpg"><img src="../images/sky_bar/jp_nu_3.jpg"><img src="../images/sky_bar/jp_nu_4.jpg"><img src="../images/sky_bar/jp_nu_5.jpg"><img src="../images/sky_bar/jp_nu_6.jpg"><img src="../images/sky_bar/jp_nu_7.jpg"><img src="../images/sky_bar/jp_nu_8.jpg"><img src="../images/sky_bar/jp_nu_9.jpg"></div>
+          </li>
+          <li class="b4">
+            <div class="jp_info"><img src="../images/sky_bar/jp_nu_0.jpg"><img src="../images/sky_bar/jp_nu_1.jpg"><img src="../images/sky_bar/jp_nu_2.jpg"><img src="../images/sky_bar/jp_nu_3.jpg"><img src="../images/sky_bar/jp_nu_4.jpg"><img src="../images/sky_bar/jp_nu_5.jpg"><img src="../images/sky_bar/jp_nu_6.jpg"><img src="../images/sky_bar/jp_nu_7.jpg"><img src="../images/sky_bar/jp_nu_8.jpg"><img src="../images/sky_bar/jp_nu_9.jpg"></div>
+          </li>
+          <li class="b5">
+            <div class="jp_info"><img src="../images/sky_bar/jp_nu_0.jpg"><img src="../images/sky_bar/jp_nu_1.jpg"><img src="../images/sky_bar/jp_nu_2.jpg"><img src="../images/sky_bar/jp_nu_3.jpg"><img src="../images/sky_bar/jp_nu_4.jpg"><img src="../images/sky_bar/jp_nu_5.jpg"><img src="../images/sky_bar/jp_nu_6.jpg"><img src="../images/sky_bar/jp_nu_7.jpg"><img src="../images/sky_bar/jp_nu_8.jpg"><img src="../images/sky_bar/jp_nu_9.jpg"></div>
+          </li>
+          <li class="b6">
+            <div class="jp_info"><img src="../images/sky_bar/jp_nu_0.jpg"><img src="../images/sky_bar/jp_nu_1.jpg"><img src="../images/sky_bar/jp_nu_2.jpg"><img src="../images/sky_bar/jp_nu_3.jpg"><img src="../images/sky_bar/jp_nu_4.jpg"><img src="../images/sky_bar/jp_nu_5.jpg"><img src="../images/sky_bar/jp_nu_6.jpg"><img src="../images/sky_bar/jp_nu_7.jpg"><img src="../images/sky_bar/jp_nu_8.jpg"><img src="../images/sky_bar/jp_nu_9.jpg"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="divider_r"></div>
+    <br class="clearfloat" />
+  </div>
+</div>
+<!------平台工具列(登入前) end--------->
+<div class="index_bg_re">
+<div class="index_bg_bg">
+<div class="index_main_img">
+  <!---- 頂部區塊 begin---->
+  <div class="header">
+      <div class="header_container">
+        <div class="header_info">
+          <!--<a href="#" class="header_btn_demo" title="體驗試玩" onclick="window.open('demo.html','體驗試玩',config='height=576,width=1274');"></a>-->
+          <a href="javascript:;" class="header_btn_demo" title="體驗試玩" onclick="openDemo()"></a>
+        </div>
+        <div class="logo"><a href="index.html"></a></div>
+        <br class="clearfloat" />
+      </div>
+  </div>
+  <!---- 頂部區塊 end---->
+  <!----跑馬燈 begin---->
+  <div class="scrolling_text">
+    <div class="scrolling_text_container">
+      <marquee onMouseOver="this.stop()" onMouseOut="this.start()">
+        <span class="all_txt">恭喜<span class="user_name_txt">再來一次</span>在［海底樂園］贏得<span class="gp_txt">152,559</span>G幣</span>
+        <span class="all_txt">恭喜<span class="user_name_txt">再來一次</span>在［海底樂園］贏得<span class="gp_txt">152,559</span>G幣</span>
+        <span class="all_txt">恭喜<span class="user_name_txt">再來一次</span>在［海底樂園］贏得<span class="gp_txt">152,559</span>G幣</span>
+      </marquee>
+    </div>
+  </div>
+  <!----跑馬燈 end---->
+  <!----輪播 begin---->
+          <div class="event_banner">
+            <div id="abgneBlock">
+              <ul class="list">
+			    <li><a href="javascript:fb_1();"><img src="../images/templates_index/event_banner/event_1.jpg"></a></li>
+			    <li><a href="javascript:fb_1();"><img src="../images/templates_index/event_banner/event_2.jpg"></a></li>
+			    <li><a href="javascript:fb_1();"><img src="../images/templates_index/event_banner/event_3.jpg"></a></li>
+		      </ul>
+              <ul class="playerControl">
+                <li></li>
+              </ul>
+	        </div>
+          </div>  
+  <!----輪播 end---->
+
+<!---- 中間區塊 begin ---->
+<div id="main_board_container_bg" class="main_board_container_bg">
+<div class="main_board_container">
+  <div class="m_container" id="m_container">
+    <div class="sidebar1">
+        <!---側邊展開選單start--->
+        <div class="left_menu_board_container">
+          <div class="left_menu_board_t"></div>
+          <div class="left_menu_board_m">
+            <div id="menuContent">
+              <div class="menu_group_1"></div>
+              <div class="left_menu_m">
+                <ul>
+                  <li>
+		            <div class="menu_item"><a href="javascript:;">最新消息</a></div>
+                    <div class="menu_sub" style="display:none;">
+                      <ul>
+                            <li><a href="index_news_01.html#main_board_container_bg">最新公告</a></li>
+                            <li><a href="index_news_02.html#main_board_container_bg">活動訊息</a></li>
+                            <li><a href="index_news_03.html#main_board_container_bg">遊戲資訊</a></li>
+                            <li><a href="index_news_04.html#main_board_container_bg">得獎名單</a></li>
+                      </ul>
+		            </div>
+                  </li>
+                  <li>
+		            <div class="menu_item"><a href="javascript:;">金鑽名人榜</a></div>
+                     <div class="menu_sub" style="display:none;">
+                      <ul>
+                            <li><a href="index_rank_01.html#main_board_container_bg">百大富豪</a></li>
+                            <li><a href="index_rank_02.html#main_board_container_bg">百大拉彩</a></li>
+                            <li><a href="index_rank_03.html#main_board_container_bg">百大贏分</a></li>
+                            <li><a href="index_rank_04.html#main_board_container_bg">遊戲局數</a></li>
+                            <li><a href="index_rank_05.html#main_board_container_bg">單局得分</a></li>
+                            <li><a href="index_rank_06.html#main_board_container_bg">單局倍率</a></li>
+                            <li><a href="index_rank_07.html#main_board_container_bg">連爆榜</a></li>
+                      </ul>
+		            </div>
+                  </li>
+                  <li>
+		            <div class="menu_item"><a href="javascript:;">遊戲介紹</a></div>
+                     <div class="menu_sub" style="display:none;">
+                      <ul>
+                            <li><a href="index_introduction_01.html#main_board_container_bg">遊戲總覽</a></li>
+                            <li><a href="index_introduction_02.html#main_board_container_bg">轉輪館</a></li>
+                            <li><a href="index_introduction_03.html#main_board_container_bg">柏青嫂</a></li>
+                            <li><a href="index_introduction_04.html#main_board_container_bg">電子館</a></li>
+                            <li><a href="index_introduction_05.html#main_board_container_bg">經典款</a></li>
+                      </ul>
+		            </div>
+                  </li>
+                  <li>
+		            <div class="menu_item"><a href="javascript:;">新手教學</a></div>
+                    <div class="menu_sub" style="display:none;">
+                      <ul>
+                            <li><a href="index_novice_01.html#main_board_container_bg">遊戲介面</a></li>
+                            <li><a href="index_novice_02.html#main_board_container_bg">幣別點數</a></li>
+                            <li><a href="index_novice_03.html#main_board_container_bg">交易系統</a></li>
+                            <li><a href="index_novice_04.html#main_board_container_bg">官方版本安裝</a></li>
+                            <li><a href="index_novice_05.html#main_board_container_bg">聊天功能</a></li>
+                            <li><a href="index_novice_06.html#main_board_container_bg">等級系統</a></li>
+                            <li><a href="index_novice_07.html#main_board_container_bg">會員人氣值</a></li>
+                            <li><a href="index_novice_08.html#main_board_container_bg">彩金介紹</a></li>
+                            <li><a href="index_novice_09.html#main_board_container_bg">道具虛寶系統</a></li>
+                            <li><a href="index_novice_10.html#main_board_container_bg">歷史轉數表</a></li>
+                            <li><a href="index_novice_11.html#main_board_container_bg">VIP卡別優惠</a></li>
+                      </ul>
+		            </div>
+                  </li>
+                  <li>
+		            <div class="menu_item"><a href="javascript:;">試玩體驗</a></div>
+                    <div class="menu_sub" style="display:none;">
+                      <ul>
+                            <li><a href="index_demo_01.html#main_board_container_bg">所有試玩</a></li>
+                            <li><a href="index_demo_02.html#main_board_container_bg">轉輪館</a></li>
+                            <li><a href="index_demo_03.html#main_board_container_bg">柏青嫂</a></li>
+                            <li><a href="index_demo_04.html#main_board_container_bg">電子館</a></li>
+                            <li><a href="index_demo_05.html#main_board_container_bg">經典款</a></li>
+                      </ul>
+		            </div>
+                  </li>
+                  <li>
+		            <div class="menu_item"><a href="javascript:;">會員專區</a></div>
+                    <div class="menu_sub" style="display:none;">
+                      <ul>
+                        <li><a href="index_member_01.html#main_board_container_bg">我的會員資訊</a></li>
+                        <li><a href="index_member_02.html#main_board_container_bg">修改密碼</a></li>
+                        <li><a href="index_member_03.html#main_board_container_bg">贈點歷程</a></li>
+                        <li><a href="index_member_04.html#main_board_container_bg">我的好友</a></li>
+                        <li><a href="index_member_05.html#main_board_container_bg">遊戲紀錄</a></li>
+                        <li><a href="index_member_06.html#main_board_container_bg">領獎中心</a></li>
+                        <li><a href="index_member_07.html#main_board_container_bg">產包購買紀錄</a></li>                                            
+                      </ul>
+		            </div>
+                  </li>
+                  <li>
+		            <div class="menu_item menu_item_on"><a href="javascript:;">儲值轉點</a></div>
+                    <div class="menu_sub">
+                      <ul>
+                        <li><a href="index_deposit_01.html#main_board_container_bg">儲值購點</a></li>
+                        <li><a href="index_deposit_02.html#main_board_container_bg" class="active">平台轉換遊戲點數</a></li>
+                        <li><a href="index_deposit_03.html#main_board_container_bg">序號儲值兌換</a></li>
+                        <li><a href="index_deposit_04.html#main_board_container_bg">交易轉點中心</a></li>
+                      </ul>
+		            </div>
+                  </li>
+	            </ul>
+              </div>
+            </div>
+          </div>
+          <div class="left_menu_board_b"></div>
+        </div>
+        <!---側邊展開選單end---> 
+
+        <!------客服中心 begin--------->
+        <div class="services_container">
+          <div class="services_center_board_t"></div>
+          <div class="services_center_board_m">
+            <div class="link_1"><a href="javascript:;" onclick="load_page(customerserviceonline)"></a></div>
+            <div class="link_2"><a href="javascript:;" onclick="load_page(faq)"></a></div>
+          </div>
+          <div class="services_center_board_b"></div>
+        </div>
+        <!------客服中心 end--------->
+
+    </div>
+    <div class="sidebar2">
+      <!---最新熱門機台 begin----->
+      <div class="hot_slot_game">
+        <div id="hot_slot_title_deposit" class="hot_slot_title_deposit"><br class="clearfloat" />
+        </div> 
+        <div class="hot_slot_deposit_02"> 
+          <ul>
+            <br class="clearfloat" />
+          </ul>
+        </div>
+      </div>
+      <!---最新熱門機台 end----->
+     
+    </div>
+    <br class="clearfloat" />
+  </div>
+</div>  
+</div>
+<!---- 中間區塊 end ---->
+
+</div>
+</div>
+</div>
+<!---- 底部內容區塊 begin ---->
+<div class="footer">
+  <div class="footer_container">
+    <div class="copyright_logo"><a href=""></a></div>
+    <div class="copyright_txt">
+      <span class="link"><a href="#">服務條款</a> |  <a href="#">隱私權政策</a> |  <a href="#">聯絡我們</a> |  <a href="#">常見問題</a></span>
+      © 2015 咪兔數位科技 All Rights Reserved.<br>
+      請注意使用時間，避免沉迷於遊戲。本遊戲部份內容需要購買遊戲幣消費。
+    </div>
+    <div class="game_npluto"><a href="http://www.npluto.com/" target="_blank"></a></div>
+    <div class="classification"></div>
+    <br class="clearfloat" />    
+  </div>
+</div>
+<!---- 底部內容區塊 end ---->  
+</body>
+</html>

@@ -1,0 +1,1166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>《金鑽樂園2 GoWin》</title>
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../css/sky_bar.css"/>
+<link rel="stylesheet" type="text/css" href="../css/templates_index.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../js/flash.js"></script>
+<script type="text/javascript" src="../js/data.js"></script>
+<style type="text/css">
+* {
+ margin: 0;
+ padding: 0;
+ /*overflow:hidden;*/
+}
+html, body {
+ width: 100%;
+ height: 100%;
+ overflow:hidden;
+}
+.ranking_m_container{
+	padding-top: 0px;
+}
+.title_container_2 ul.tabs_2 .menu1{
+	background-image: url(../images/templates_index/ranking/ranking_menu_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.title_container_2 ul.tabs_2 .menu1 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container_2 ul.tabs_2 .menu1.active{
+	background-image: url(../images/templates_index/ranking/ranking_menu_1.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.title_container_2 ul.tabs_2 .menu2{
+	background-image: url(../images/templates_index/ranking/ranking_menu_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.title_container_2 ul.tabs_2 .menu2 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container_2 ul.tabs_2 .menu2.active{
+	background-image: url(../images/templates_index/ranking/ranking_menu_2.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.title_container_2 ul.tabs_2 .menu3{
+	background-image: url(../images/templates_index/ranking/ranking_menu_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs_2 .menu3 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container_2 ul.tabs_2 .menu3.active{
+	background-image: url(../images/templates_index/ranking/ranking_menu_3.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.title_container_2 ul.tabs_2 .menu4{
+	background-image: url(../images/templates_index/ranking/ranking_menu_4.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs_2 .menu4 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container_2 ul.tabs_2 .menu4.active{
+	background-image: url(../images/templates_index/ranking/ranking_menu_4.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.abgne_tab_2 {
+	clear: left;
+}
+ul.tabs_2 {
+	width: auto;
+	height: auto;
+	display: block;
+	padding-left: 0px;
+	float: left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #000000;
+}
+ul.tabs_2 li {
+	float: left;
+	height: 34px;
+	line-height: 22px;
+	font-size: 12px;
+	text-align: center;
+	width: auto;
+	list-style-position: outside;
+	list-style-type: none;
+	display: block;
+	margin-right: 0px;
+}
+ul.tabs_2 li a {
+	text-decoration: none;
+}
+
+div.tab_container {
+	float: left;
+	/*width: 100%;*/
+	width: 50%;
+}
+div.tab_container .tab_content_2 {
+	/*height: 176px;*/
+}
+
+/**排行榜條目**/
+ul.ranking_list_index{
+	margin-left: 2px;
+	height: auto;
+	margin-right: 2px;
+	display: block;
+	padding-top: 2px;
+	/*width: 258px;*/
+	width: 100%;
+	float: left;
+}
+ul.ranking_list_index li{
+	list-style-position: outside;
+	list-style-type: none;
+	background-image: url(../images/common/news_line_1.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	width: auto;
+	margin: 0px;
+	display: block;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 1px;
+	padding-left: 0px;
+	line-height: 28px;
+	text-align:center;
+}
+ul.ranking_list_index li a{
+	height: auto;
+	color: #333333;
+	width: auto;
+}
+ul.ranking_list_index li a:hover{
+	height: auto;
+	color: #66C;
+}
+ul.ranking_list_index li .list_nu{
+	float: left;
+	/*width: 40px;*/
+	min-width:50px;
+	width:10%;
+	padding-right: 2px;
+	text-align: center;
+	font-size: 26px;
+}
+
+ul.ranking_list_index li .user_id{
+	float: left;
+	/*width: 100px;*/
+	/*width: 120px;*/
+	min-width:150px;
+	width:35%;
+	height: auto;
+	font-size: 26px;
+	margin: 0px;
+	line-height: 28px;
+	text-overflow : ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	/*color: #ebc677;*/
+	color: #452606;
+}
+ul.ranking_list_index li .ranking_index{
+	float: left;
+	font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	font-size: 26px;
+	text-align: center;
+	/*width: 90px;*/
+	min-width:125px;
+	width:25%;
+	line-height: 28px;
+	height: auto;
+	/*color: #ebc677;*/
+	color: #452606;
+	padding-left: 5px;
+}
+
+ul.ranking_list_index li .ranking_info{
+	float: left;
+	font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	font-size: 26px;
+	text-align: center;
+	/*width: 130px;*/
+	min-width:125px;
+	width:25%;
+	line-height: 28px;
+	height: auto;
+	/*color: #ebc677;*/
+	color: #452606;
+	padding-left: 5px;
+}
+.hot_slot_game .hot_slot_title_rank{
+	background-image: none;
+  font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, clean, sans-serif;
+  color:white;
+  font-size:30px;
+}
+.hot_slot_rank_01{
+	padding-top: 0px;
+	padding-left: 0px;
+}
+.hot_slot_game .hot_slot_title_rank {
+  width: auto;
+  padding-right: 0px;
+  height: 135px;
+  background-color: #492455;
+}
+ul.ranking_list_index {
+  margin-left: 0px;
+  padding-top: 0px;
+}
+/*div.tab_container {
+ background: #B69439;
+}*/
+.index_bg_re, .index_bg_bg{
+ background-image: none;
+}
+.m_container {
+ width: 100%;
+}
+.hot_slot_rank_01 {
+ display: block;
+ background-image: none;
+ /*background-image: url(../images/templates_index/hot_slot/hot_slot_blank_bg.png);
+ background-repeat: repeat-x;
+ background-position: left top;*/
+ /* height: auto; */
+ width: 100%;
+ /* padding-top: 20px; */
+ /* padding-left: 30px; */
+}
+select {
+ color: #fff;
+ background-image: url("../images/game/dropdown_off.png"), -webkit-linear-gradient(#B715EC, #B715EC 40%, #B715EC);
+ background-color: #B715EC;
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ border-radius: 20px;
+ padding-left: 15px;
+ -webkit-appearance: button;
+ -webkit-border-radius: 12px;
+ -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+ /*-webkit-user-select: none;*/
+ font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+ /*font-size: 20px;*/
+ background-position: right center; /*97% center;*/
+ background-repeat: no-repeat;
+ border: 1px solid #AAA;
+ /* color: #555; */
+ font-size: inherit;
+ /*margin: 20px;*/
+ overflow: hidden;
+ padding: 5px 10px;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ width: 272px;
+ height:70px;
+}
+.sky_bar {
+ /*height: 100px;*/
+ background-image: none;
+ /*min-width: 1200px;*/
+ width:100%;
+}
+.sky_bar_ct{
+	/*height: 100px;*/
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	/*padding-right: 10px;
+	padding-left: 10px;*/
+	float:left;
+	overflow: hidden;
+}
+.sky_bar_l {
+ /*height: 100px;*/
+ width: 90px;
+ background-image: url("../images/sky_bar/titlebar_left.png");
+ background-position: left center;
+ float:left;
+ background-repeat: no-repeat;
+}
+.sky_bar_m {
+ /*height: 100px;*/
+ /*min-width:1020px;*/
+ /*width: 90%;*/
+ /*width:initial;*/
+ background-image: url("../images/sky_bar/titlebar_middle.png");
+ background-position: center center;
+ background-repeat: repeat-x;
+ float:left;
+}
+.sky_bar_r {
+ /*height: 100px;*/
+ width: 90px;
+ background-image: url("../images/sky_bar/titlebar_right.png");
+ background-position: right center;
+ float:left;
+ background-repeat: no-repeat;
+}
+#menuContent .left_menu_m ul li .menu_item_1 a {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/baidaregal_off.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_1 a:hover {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/baidaregal_on.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_2 a {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/baidapullcolor_off.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_2 a:hover {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/baidapullcolor_on.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_3 a {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/gamebn_off.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_3 a:hover {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/gamebn_on.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_4 a {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/singlebnscore_off.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_4 a:hover {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/singlebnscore_on.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_5 a {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/singlebnrate_off.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_5 a:hover {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/singlebnrate_on.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_6 a {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/combolist_off.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_6 a:hover {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/combolist_on.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+
+#menuContent .left_menu_m ul li .menu_item_7 a {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/combolist_off.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_7 a:hover {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/combolist_on.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+
+#menuContent .left_menu_m ul li .menu_item_8 a {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/combolist_off.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_8 a:hover {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/combolist_on.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+
+#menuContent .left_menu_m ul li .menu_item_9 a {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/combolist_off.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent .left_menu_m ul li .menu_item_9 a:hover {
+ display:block;
+ height: 138px;
+ width: 257px;
+ background-image: url("../images/sky_bar/combolist_on.png");
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+#menuContent{
+ width: 100%;
+}
+#menuContent .left_menu_m {
+ width: 100%;
+ overflow-x:hidden;
+ overflow-y:scroll;
+ height: 840px;
+}
+
+-webkit-scrollbar-thumb{
+background-color:#B03C3F;
+border-radius:10px;
+}
+-webkit-scrollbar-thumb:hover{
+background-color:#BF4649;
+border:1px solid #333333;
+}
+-webkit-scrollbar-thumb:active{
+background-color:#A6393D;
+border:1px solid #333333;
+}
+.hot_slot_game {
+ overflow: scroll;
+ height: 826px;
+ background-color:#BB9C3F;
+}
+div.tab_container {
+	clear: none;
+}
+</style>
+<script>
+function genField(classify)
+{
+	//alert(classify);
+	if(classify=='GameSelection')
+	{
+	  var $el = $("#sel_game");
+    $el.empty(); // remove old options
+    $.getJSON('../js/game.json', function(data) {
+    	//alert(JSON.stringify(data));
+    	//JSON.parse(data);
+      $.each(data.Game_Subjects, function(i,v) {
+        $el.append($("<option></option>").attr("value", v[Object.keys(v)[0]]).text(Object.keys(v)[0]));
+      });
+    });
+  }
+}
+//genField('GameSelection');
+
+// Get the suitable width and height for canvas
+function canvas() {
+ var canvaswidth  = parseInt(window.innerWidth);
+ //var canvasheight = parseInt(window.innerWidth*1152/2048);
+ var canvasheight = parseInt(window.innerWidth*950/1550);
+ var sidebar1_width,sidebar1_minwidth;
+ var sidebar2_width,sidebar2_minwidth;
+ //var margintop = parseInt((window.innerWidth-canvasheight)/2);
+ console.log('canvas() is called');
+ //$('#canvas').css("margin-top", margintop);
+ /*if(canvaswidth < 1200)
+    canvaswidth = 1200;
+ */
+ console.log('canvaswidth-180 = '+parseInt(canvaswidth-180));
+ //$('#sky_bar_m').width(parseInt(canvaswidth-180));
+ $('#canvas').width(canvaswidth);
+ $('#canvas').height(canvasheight);
+ //$('#sky_bar_m').css({"width":parseInt(canvaswidth-180)});
+ //$('#sky_bar_m').width(parseInt(canvaswidth-180));
+ $('#sidebar1').width(parseInt(canvaswidth*0.15));
+ $('#sidebar2').width(parseInt(canvaswidth*0.85-22));
+ var w,h;
+ //w=parseInt(canvaswidth-180);
+ h=parseInt(canvasheight*100/990);
+ //h=parseInt((canvaswidth-180)*950/1550);
+ $('#sky_bar').css({"height":h+'px'});
+ $('#sky_bar_ct').css({"height":h+'px'});
+ $('#sky_bar_l').css({"width":'90px',"height":h+'px',"background-size":'90px '+h+'px'});
+ w=parseInt(canvaswidth-180);
+ //h=parseInt((canvaswidth-180)*950/1550);
+ $('#sky_bar_m').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+ $('#sky_bar_r').css({"width":'90px',"height":h+'px',"background-size":'90px '+h+'px'});
+ w=parseInt((canvaswidth-180)*150/1740);
+ h=parseInt(canvasheight*100/990*0.6);
+ $('#sky_bar_m div img').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+ $('#sky_bar_m div').css({"height":h+'px'});
+
+ w=parseInt(canvaswidth*0.15-15);
+ h=parseInt((canvaswidth*0.15-15)*950/1550);
+ $('#menuContent .left_menu_m ul li .menu_item_1 a').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+ $('#menuContent .left_menu_m ul li .menu_item_2 a').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+ $('#menuContent .left_menu_m ul li .menu_item_3 a').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+ $('#menuContent .left_menu_m ul li .menu_item_4 a').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+ $('#menuContent .left_menu_m ul li .menu_item_5 a').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+ $('#menuContent .left_menu_m ul li .menu_item_6 a').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+ $('#menuContent .left_menu_m ul li .menu_item_7 a').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+ $('#menuContent .left_menu_m ul li .menu_item_8 a').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+ $('#menuContent .left_menu_m ul li .menu_item_9 a').css({"width":w+'px',"height":h+'px',"background-size":w+'px '+h+'px'});
+
+ //$('#menuContent .left_menu_m ul li .menu_item_1 a img').width(parseInt(canvaswidth*0.15-5));
+ //$('#menuContent .left_menu_m ul li .menu_item_1 a img').height(parseInt( (canvaswidth*0.15-5)*138/257));
+ /*sidebar1_width = ((parseInt(canvaswidth*0.15)<275)?275:parseInt(canvaswidth*0.15));
+ sidebar2_width = parseInt(canvaswidth-sidebar1_width-22);
+ $("#sidebar1").css({
+   "min-width": 275,
+   "width": sidebar1_width
+ });
+
+ sidebar2_width = ((canvaswidth>1200)?parseInt(canvaswidth*0.85-22):903);
+ console.log('canvaswidth sidebar1_width= '+sidebar1_width);
+ console.log('canvaswidth sidebar2_width= '+sidebar2_width);
+ $("#sidebar2").css({
+   "min-width": 903,
+   "width": sidebar2_width
+ });*/
+};
+
+$(function(){
+canvas();
+});
+
+/* Rresize the canvas to occupy the full page, 
+   by getting the widow width and height and setting it to canvas */
+$(window).resize(function() {
+  console.log('window was resized');
+  console.log(' window.innerWidth = '+ window.innerWidth);
+  console.log(' window.innerHeight = '+ window.innerHeight);
+  canvas();
+});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body style="margin:0;padding:0;">
+<!------平台工具列(登入前) begin-------->
+<div id="canvas">
+<div class="sky_bar">
+	<div class="sky_bar_ct">
+	  <div id="sky_bar_l" class="sky_bar_l"></div>
+	  <div id="sky_bar_m" class="sky_bar_m"><div style="text-align:center;padding-top:18px;"><img src="../images/sky_bar/leaderboard.png"></div></div>
+	  <div id="sky_bar_r" class="sky_bar_r"></div>
+  </div>
+</div>
+<!------平台工具列(登入前) end--------->
+
+<div class="index_bg_re">
+<div class="index_bg_bg">
+<div class="index_main_img" style="background-image: none;">
+<!---- 中間區塊 begin ---->
+<div class="main_board_container_bg">
+<div class="main_board_container">
+  <div class="m_container" id="m_container">
+    <div id="sidebar1" class="sidebar1" style="padding:0;">
+        <!---側邊展開選單start--->
+        <div class="left_menu_board_container">
+          <!--<div class="left_menu_board_m">-->
+          <div>
+            <div id="menuContent">
+              <div class="menu_group_1"></div>
+              <div class="left_menu_m">
+                <ul>
+                  <li>
+		                <div id=menu_item_1" class="menu_item_1"><a href="javascript:;"></a></div>
+                  </li>
+                  <li>
+		                <div id=menu_item_2" class="menu_item_2"><a href="javascript:;"></a></div>
+                  </li>
+                  <li>
+		                <div id=menu_item_3" class="menu_item_3"><a href="javascript:;"></a></div>
+                  </li>
+                  <li>
+		                <div id=menu_item_4" class="menu_item_4"><a href="javascript:;"></a></div>
+                  </li>
+                  <li>
+		                <div id=menu_item_5" class="menu_item_5"><a href="javascript:;"></a></div>
+                  </li>
+                  <li>
+		                <div id=menu_item_6" class="menu_item_6"><a href="javascript:;"></a></div>
+                  </li>
+                  <li>
+		                <div id=menu_item_7" class="menu_item_7"><a href="javascript:;"></a></div>
+                  </li>
+                  <li>
+		                <div id=menu_item_8" class="menu_item_8"><a href="javascript:;"></a></div>
+                  </li>
+                  <li>
+		                <div id=menu_item_9" class="menu_item_9"><a href="javascript:;"></a></div>
+                  </li>
+	              </ul>
+              </div>
+            </div>
+          </div>
+          <!--<div class="left_menu_board_b">--><div></div>
+        </div>
+        <!---側邊展開選單end---> 
+
+    </div>
+    <div id="sidebar2" class="sidebar2" style="padding-left:22px;background-color:#492455;">
+      <!---最新熱門機台 begin----->
+      <div class="hot_slot_game">
+        <div id="hot_slot_title_rank" class="hot_slot_title_rank">
+        	<div style="height: 60px;">* 每小時更新一次，電子館不統計。每週二維護後(上午10:00)，重置排行資料。</div>
+          <div style="height: 72px;">
+          <!--<select id="sel_game" name="sel_game" multiple size="10"></select>-->
+            <select id="sel_game" name="sel_game">
+              <option> 海底樂園</option>
+              <option> 金鑽列車 </option>
+              <option> 將軍傳 </option>
+              <option> 狩魔之塔 </option>
+              <option> 亂世梟雄 </option>
+              <option> 俏財神 </option>
+              <option> 馬雅歷險 </option>
+              <option> 捕魚大師 </option>
+              <option> 海灘排球 </option>
+              <option> 俠盜傳奇 </option>
+              <option> 銀河探險隊 </option>
+              <option> 大海賊 </option>
+            </select>
+          </div>
+        </div>
+        <div class="hot_slot_rank_01">
+        <!--<div>-->
+          <!------------------------------------------------------------------->
+          <div class="ranking_m_container">
+             <div class="tab_container">
+          		 <div id="tab1" class="tab_content_2">
+          		   <!---->
+                 <!--<div><img src="../images/templates_index/ranking/ranking_title_1.png"></div>-->
+                 <ul class="ranking_list_index">
+                   <li style="background-color:#000000;background-image:none;">
+                     <div class="list_nu" style="color:#ebc677;">名次</div>
+                     <div class="user_id" style="color:#ebc677;">暱稱<!--角色ID--></div>
+                     <div class="ranking_index" style="color:#ebc677;">防騙指數</div>
+                     <div class="ranking_info" style="color:#ebc677;">G幣點數</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">1.</div>
+                     <div class="user_id">角色ID12345678901234567890</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">2.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">3.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">4.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">5.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">6.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">7.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">8.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">9.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">10.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">11.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">12.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">13.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">14.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">15.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">16.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">17.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">18.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">19.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">20.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">21.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">22.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">23.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">24.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">25.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">26.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">27.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">28.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">29.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">30.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">31.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">32.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">33.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">34.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">35.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">36.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">37.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">38.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">39.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">40.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+
+                 </ul>
+          		 </div>
+          	 </div>
+             <div class="tab_container">
+          		 <div id="tab2" class="tab_content_2">
+          		   <!---->
+                 <!--<div><img src="../images/templates_index/ranking/ranking_title_1.png"></div>-->
+                 <ul class="ranking_list_index">
+                   <li style="background-color:#000000;background-image:none;">
+                     <div class="list_nu" style="color:#ebc677;">名次</div>
+                     <div class="user_id" style="color:#ebc677;">暱稱<!--角色ID--></div>
+                     <div class="ranking_index" style="color:#ebc677;">防騙指數</div>
+                     <div class="ranking_info" style="color:#ebc677;">G幣點數</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">21.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">22.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">23.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">24.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">25.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">26.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">27.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">28.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">29.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">30.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">999</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">31.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">32.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">33.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">34.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">35.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">36.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">37.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">38.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">39.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                   <li>
+                     <div class="list_nu">40.</div>
+                     <div class="user_id">角色ID</div>
+                     <div class="ranking_index">807,489</div>
+                     <div class="ranking_info">999,999,999</div>
+                     <br class="clearfloat">
+                   </li>
+                 </ul>
+          		 </div>
+          	 </div>
+          </div>
+        </div>
+      </div>
+      <!---最新熱門機台 end----->
+     
+    </div>
+    <br class="clearfloat" />
+  </div>
+</div>  
+</div>
+<!---- 中間區塊 end ---->
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>《龍之歌》官方網站：真子高手遊戲平台</title>
+<meta name="keywords" content="龍之歌,真子高手"/>
+<link type="text/css" href="../css/templates_index.css" rel="stylesheet"/>
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../js/openwin.js"></script>
+<style type="text/css">
+html, div, map, dt, isindex, form {
+	display: block; 
+}
+/* Make HTML 5 elements display block-level for consistent styling */  
+header, nav, article, footer, address {  
+    display: block;  
+}
+img{border:0px;}
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	line-height: 1.5em;
+	padding-top: 10px;
+} 
+a{
+	color: #666;
+	text-decoration: none;
+}
+a:hover{
+	color: #000;
+	text-decoration: none;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+	color: #999;
+	background-color: #19161a;
+    background-color:transparent;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 1.5em;
+
+}
+
+
+.title_container{
+	height: auto;
+	width: 548px;
+}
+
+.news_m_container{
+	clear: left;
+	width: 526px;
+	padding-left: 11px;
+	padding-top: 10px;
+	padding-right: 11px;
+	height: 164px;
+}
+
+.title_container ul.tabs .menu1{
+	background-image: url(../images/templates_index/news/news_menu_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.title_container ul.tabs .menu1 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container ul.tabs .menu1.active{
+	background-image: url(../images/templates_index/news/news_menu_1.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.title_container ul.tabs .menu2{
+	background-image: url(../images/templates_index/news/news_menu_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.title_container ul.tabs .menu2 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container ul.tabs .menu2.active{
+	background-image: url(../images/templates_index/news/news_menu_2.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.title_container ul.tabs .menu3{
+	background-image: url(../images/templates_index/news/news_menu_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs .menu3 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container ul.tabs .menu3.active{
+	background-image: url(../images/templates_index/news/news_menu_3.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.title_container ul.tabs .menu4{
+	background-image: url(../images/templates_index/news/news_menu_4.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs .menu4 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container ul.tabs .menu4.active{
+	background-image: url(../images/templates_index/news/news_menu_4.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.title_container ul.tabs .menu5{
+	background-image: url(../images/templates_index/news/news_menu_5.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs .menu5 a{
+	display: block;
+	height: 34px;
+	width: 107px;
+}
+.title_container ul.tabs .menu5.active{
+	background-image: url(../images/templates_index/news/news_menu_5.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+
+
+.abgne_tab {
+	clear: left;
+}
+ul.tabs {
+	width: auto;
+	height: auto;
+	display: block;
+	padding-left: 0px;
+	float: left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #000000;
+}
+ul.tabs li {
+	float: left;
+	height: 34px;
+	line-height: 22px;
+	font-size: 12px;
+	text-align: center;
+	width: auto;
+	list-style-position: outside;
+	list-style-type: none;
+	display: block;
+	margin-right: 0px;
+}
+ul.tabs li a {
+	text-decoration: none;
+}
+
+div.tab_container {
+	clear: left;
+	width: 100%;
+}
+div.tab_container .tab_content {
+	height: 176px;
+}
+
+
+
+.clearfloat { /* 這個類別可放置在 <br /> 或空白的 Div 上，當做接在 #container 內最後一個浮動 Div 後方的最後一個元素 (如果從 #container 移除或取出 #footer) */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+</style>
+<script type="text/javascript">
+	$(function(){
+		// 預設顯示第一個 Tab
+		var _showTab = 0;
+		var $defaultLi = $('ul.tabs li').eq(_showTab).addClass('active');
+		$('.tab_content').eq($defaultLi.index()).siblings().hide();
+		
+		// 當 li 頁籤被點擊時...
+		// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+		$('ul.tabs li').mouseover(function() {
+			// 找出 li 中的超連結 href(#id)
+			var $this = $(this),
+				_index = $this.index();
+			// 把目前點擊到的 li 頁籤加上 .active
+			// 並把兄弟元素中有 .active 的都移除 class
+			$this.addClass('active').siblings('.active').removeClass('active');
+			// 淡入相對應的內容並隱藏兄弟元素
+			$('.tab_content').eq(_index).stop(false, true).fadeIn().siblings().hide();
+
+			return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+
+
+	});
+</script>
+</head>
+
+<body>
+            
+<div class="abgne_tab">
+  <div class="title_container">
+    <ul class="tabs">
+      <li class="menu1"><a href="javascript:menu01_1();" target="_top"></a></li>
+      <li class="menu2"><a href="javascript:menu01_2();" target="_top"></a></li>
+      <li class="menu3"><a href="javascript:menu01_3();" target="_top"></a></li>
+      <li class="menu4"><a href="javascript:menu01_4();" target="_top"></a></li>
+      <li class="menu5"><a href="javascript:menu01_5();" target="_top"></a></li>
+      <br class="clearfloat" />
+    </ul>
+    <br class="clearfloat" />
+  </div>  
+  <div class="news_m_container">  
+      <div class="tab_container">
+		<div id="tab1" class="tab_content">
+		  <!---->
+          <ul class="news_list_index">
+          <li>
+            <div class="news_class"><div class="news_icon_1"></div></div>
+            <div class="news_subject"><a href="javascript:menu01_2();">《三國啪啪啪》不刪檔封測 即將展開 即將展開 即將展開</a></div>
+            <div class="news_date">2014.08.22</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="news_class"><div class="news_icon_3"></div></div>
+            <div class="news_subject"><a href="javascript:menu01_3();">《三國啪啪啪》之三大職業！</a></div>
+            <div class="news_date">2014.07.19</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="news_class"><div class="news_icon_2"></div></div>
+            <div class="news_subject"><a href="javascript:menu01_3();">《三國啪啪啪》之三大職業！</a></div>
+            <div class="news_date">2014.07.19</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="news_class"><div class="news_icon_2"></div></div>
+            <div class="news_subject"><a href="javascript:menu01_3();">《三國啪啪啪》之三大職業！</a></div>
+            <div class="news_date">2014.07.19</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="news_class"><div class="news_icon_8"></div></div>
+            <div class="news_subject"><a href="javascript:menu01_3();">《三國啪啪啪》之三大職業！</a></div>
+            <div class="news_date">2014.07.19</div><br class="clearfloat" />
+          </li>
+          </ul>
+          <!---->
+		</div>
+		<div id="tab2" class="tab_content">
+		  <!---->
+          <ul class="news_list_index">
+          <li>
+            <div class="news_class"><div class="news_icon_1"></div></div>
+            <div class="news_subject"><a href="javascript:menu01_1();">《三國啪啪啪》不刪檔封測 即將展開</a></div>
+            <div class="news_date">2014.08.22</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="news_class"><div class="news_icon_1"></div></div>
+            <div class="news_subject"><a href="javascript:menu01_1();">《三國啪啪啪》粉絲團成立囉！想知道...</a></div>
+            <div class="news_date">2014.06.16</div><br class="clearfloat" />
+          </li>
+          </ul>
+          <!---->
+		</div>
+		<div id="tab3" class="tab_content">
+		  <!---->
+          <ul class="news_list_index">
+          <li>
+            <div class="news_class"><div class="news_icon_2"></div></div>
+            <div class="news_subject"><a href="javascript:MM_popupMsg();">...</a></div>
+            <div class="news_date">2014.07.14</div><br class="clearfloat" />
+          </li>
+          </ul>
+          <!---->
+		</div>
+		<div id="tab4" class="tab_content">
+		  <!---->
+          <ul class="news_list_index">
+          <li>
+            <div class="news_class"><div class="news_icon_3"></div></div>
+            <div class="news_subject"><a href="javascript:MM_popupMsg();">...</a></div>
+            <div class="news_date">2014.07.14</div><br class="clearfloat" />
+          </li>
+          </ul>
+          <!---->
+		</div>
+		<div id="tab4" class="tab_content">
+		  <!---->
+          <ul class="news_list_index">
+          <li>
+            <div class="news_class"><div class="news_icon_8"></div></div>
+            <div class="news_subject"><a href="javascript:MM_popupMsg();">...</a></div>
+            <div class="news_date">2014.07.14</div><br class="clearfloat" />
+          </li>
+          </ul>
+          <!---->
+		</div>
+
+	  </div>
+  </div>
+</div>
+</body>
+</html>

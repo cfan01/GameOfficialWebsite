@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>《龍之歌》官方網站：真子高手遊戲平台</title>
+<meta name="keywords" content="龍之歌,真子高手"/>
+<link type="text/css" href="../css/templates_index.css" rel="stylesheet"/>
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../js/openwin.js"></script>
+<style type="text/css">
+html, div, map, dt, isindex, form {
+	display: block; 
+}
+/* Make HTML 5 elements display block-level for consistent styling */  
+header, nav, article, footer, address {  
+    display: block;  
+}
+img{border:0px;}
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	line-height: 1.5em;
+	padding-top: 10px;
+} 
+a{
+	color: #666;
+	text-decoration: none;
+}
+a:hover{
+	color: #000;
+	text-decoration: none;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+	color: #999;
+	background-color: #19161a;
+    background-color:transparent;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 1.5em;
+
+}
+
+
+.title_container_2{
+	height: auto;
+	width: 548px;
+}
+.server_list{
+	display: block;
+	float: left;
+	height: 28px;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 170px;
+	margin-left: 130px;
+	padding-top: 6px;
+}
+.server_list_style{
+	display: block;
+	width: 160px;
+}
+.ranking_m_container{
+	clear: left;
+	width: 524px;
+	padding-left: 12px;
+	padding-top: 40px;
+	padding-right: 12px;
+	height: 164px;
+}
+
+.title_container_2 ul.tabs_2 .menu1{
+	background-image: url(../images/templates_index/ranking/ranking_menu_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.title_container_2 ul.tabs_2 .menu1 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container_2 ul.tabs_2 .menu1.active{
+	background-image: url(../images/templates_index/ranking/ranking_menu_1.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.title_container_2 ul.tabs_2 .menu2{
+	background-image: url(../images/templates_index/ranking/ranking_menu_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.title_container_2 ul.tabs_2 .menu2 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container_2 ul.tabs_2 .menu2.active{
+	background-image: url(../images/templates_index/ranking/ranking_menu_2.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.title_container_2 ul.tabs_2 .menu3{
+	background-image: url(../images/templates_index/ranking/ranking_menu_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs_2 .menu3 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container_2 ul.tabs_2 .menu3.active{
+	background-image: url(../images/templates_index/ranking/ranking_menu_3.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+.title_container_2 ul.tabs_2 .menu4{
+	background-image: url(../images/templates_index/ranking/ranking_menu_4.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs_2 .menu4 a{
+	display: block;
+	height: 34px;
+	width: 110px;
+}
+.title_container_2 ul.tabs_2 .menu4.active{
+	background-image: url(../images/templates_index/ranking/ranking_menu_4.png);
+	background-repeat: no-repeat;
+	background-position: left -34px;
+}
+
+
+.abgne_tab_2 {
+	clear: left;
+}
+ul.tabs_2 {
+	width: auto;
+	height: auto;
+	display: block;
+	padding-left: 0px;
+	float: left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #000000;
+}
+ul.tabs_2 li {
+	float: left;
+	height: 34px;
+	line-height: 22px;
+	font-size: 12px;
+	text-align: center;
+	width: auto;
+	list-style-position: outside;
+	list-style-type: none;
+	display: block;
+	margin-right: 0px;
+}
+ul.tabs_2 li a {
+	text-decoration: none;
+}
+
+div.tab_container {
+	clear: left;
+	width: 100%;
+}
+div.tab_container .tab_content_2 {
+	height: 176px;
+}
+
+/**排行榜條目**/
+ul.ranking_list_index{
+	margin-left: 2px;
+	height: auto;
+	margin-right: 2px;
+	display: block;
+	padding-top: 2px;
+	width: 258px;
+	float: left;
+}
+ul.ranking_list_index li{
+	list-style-position: outside;
+	list-style-type: none;
+	background-image: url(../images/common/news_line_1.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	width: auto;
+	margin: 0px;
+	display: block;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 1px;
+	padding-left: 0px;
+	line-height: 28px;
+}
+ul.ranking_list_index li a{
+	height: auto;
+	color: #333333;
+	width: auto;
+}
+ul.ranking_list_index li a:hover{
+	height: auto;
+	color: #66C;
+}
+ul.ranking_list_index li .list_nu{
+	float: left;
+	width: 40px;
+	margin-right: 18px;
+	text-align: center;
+	}
+
+ul.ranking_list_index li .user_id{
+	float: left;
+	width: 100px;
+	height: auto;
+	font-size: 12px;
+	margin: 0px;
+	line-height: 28px;
+	text-overflow : ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	color: #ebc677;
+}
+
+ul.ranking_list_index li .ranking_info{
+	float: left;
+	font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	width: 90px;
+	line-height: 28px;
+	height: auto;
+	color: #ebc677;
+	padding-left: 5px;
+}
+
+
+.clearfloat { /* 這個類別可放置在 <br /> 或空白的 Div 上，當做接在 #container 內最後一個浮動 Div 後方的最後一個元素 (如果從 #container 移除或取出 #footer) */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+</style>
+<script type="text/javascript">
+	$(function(){
+		// 預設顯示第一個 Tab
+		var _showTab = 0;
+		var $defaultLi = $('ul.tabs_2 li').eq(_showTab).addClass('active');
+		$('.tab_content_2').eq($defaultLi.index()).siblings().hide();
+		
+		// 當 li 頁籤被點擊時...
+		// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+		$('ul.tabs_2 li').mouseover(function() {
+			// 找出 li 中的超連結 href(#id)
+			var $this = $(this),
+				_index = $this.index();
+			// 把目前點擊到的 li 頁籤加上 .active
+			// 並把兄弟元素中有 .active 的都移除 class
+			$this.addClass('active').siblings('.active').removeClass('active');
+			// 淡入相對應的內容並隱藏兄弟元素
+			$('.tab_content_2').eq(_index).stop(false, true).fadeIn().siblings().hide();
+
+			return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+
+
+	});
+</script>
+</head>
+
+<body>
+            
+<div class="abgne_tab_2">
+  <div class="title_container_2">
+    <div class="server_list">
+      <select name="select" id="select" class="server_list_style">
+        <option>S49 四十九輪迴</option>
+        <option>S48 四十八輪迴</option>
+      </select>
+    </div>
+    <ul class="tabs_2">
+      <li class="menu1"><a href="javascript:menu01_1();" target="_top"></a></li>
+      <li class="menu2"><a href="javascript:menu01_2();" target="_top"></a></li>
+      <br class="clearfloat" />
+    </ul>
+    <br class="clearfloat" />
+  </div>  
+  <div class="ranking_m_container">  
+      <div class="tab_container">
+		<div id="tab1" class="tab_content_2">
+		  <!---->
+          <div><img src="../images/templates_index/ranking/ranking_title_1.png"></div>
+          <ul class="ranking_list_index">
+          <li>
+            <div class="list_nu">1.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">Lv99</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">2.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">Lv99</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">3.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">Lv99</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">4.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">Lv99</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">5.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">Lv99</div><br class="clearfloat" />
+          </li>
+          </ul>
+          <ul class="ranking_list_index">
+          <li>
+            <div class="list_nu">6.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">Lv99</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">7.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">Lv99</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">8.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">Lv99</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">9.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">Lv99</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">10.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">Lv99</div><br class="clearfloat" />
+          </li>
+          </ul>
+          <br class="clearfloat" />
+          <!---->
+		</div>
+		<div id="tab2" class="tab_content_2">
+		  <!---->
+          <div><img src="../images/templates_index/ranking/ranking_title_2.png"></div>
+          <ul class="ranking_list_index">
+          <li>
+            <div class="list_nu">1.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">807,489</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">2.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">807,489</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">3.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">807,489</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">4.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">807,489</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">5.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">807,489</div><br class="clearfloat" />
+          </li>
+          </ul>
+          <ul class="ranking_list_index">
+          <li>
+            <div class="list_nu">6.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">807,489</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">7.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">807,489</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">8.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">807,489</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">9.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">807,489</div><br class="clearfloat" />
+          </li>
+          <li>
+            <div class="list_nu">10.</div>
+            <div class="user_id">角色ID</div>
+            <div class="ranking_info">807,489</div><br class="clearfloat" />
+          </li>
+          </ul>
+          <br class="clearfloat" />
+          <!---->
+		</div>
+
+	  </div>
+  </div>
+</div>
+</body>
+</html>

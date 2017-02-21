@@ -1,0 +1,45 @@
+{
+ "arrayContent" : [ {"category":"latestnews","page":"announcement","url":"/latestnews/announcement","content":"最新公告"},
+                    {"category":"latestnews","page":"activity_info","url":"/latestnews/activity_info","content":"活動訊息"},
+                    {"category":"latestnews","page":"game_info","url":"/latestnews/game_info","content":"遊戲資訊"},
+                    {"category":"latestnews","page":"winners","url":"/latestnews/winners","content":"得獎名單"},
+
+                    {"category":"goldhalloffame","page":"regal","url":"/goldhalloffame/regal","content":"百大富豪"},
+                    {"category":"goldhalloffame","page":"pullcolor","url":"/goldhalloffame/pullcolor","content":"百大拉彩"},
+                    {"category":"goldhalloffame","page":"winpoints","url":"/goldhalloffame/winpoints","content":"百大贏分"},
+                    {"category":"goldhalloffame","page":"gamenumofboard","url":"/goldhalloffame/gamenumofboard","content":"遊戲局數"},
+                    {"category":"goldhalloffame","page":"singleboardscore","url":"/goldhalloffame/singleboardscore","content":"單局得分"},
+                    {"category":"goldhalloffame","page":"singleboardrate","url":"/goldhalloffame/singleboardrate","content":"單局倍率"},
+                    {"category":"goldhalloffame","page":"lianpowboard","url":"/goldhalloffame/lianpowboard","content":"連爆榜"},
+
+                    {"category":"gameinfo","page":"gameoverview","url":"/gameinfo/gameoverview","content":"遊戲總覽"},
+                    {"category":"gameinfo","page":"turnroundhall","url":"/gameinfo/turnroundhall","content":"轉輪館"},
+                    {"category":"gameinfo","page":"saobaiqing","url":"/gameinfo/saobaiqing","content":"柏青嫂"},
+                    {"category":"gameinfo","page":"electrichouse","url":"/gameinfo/electrichouse","content":"電子館"},
+                    {"category":"gameinfo","page":"classicstyle","url":"/gameinfo/classicstyle","content":"經典款"},
+
+                    {"category":"novice","page":"gameinterface","url":"/novice/gameinterface","content":"遊戲介面"},
+                    {"category":"novice","page":"currencycount","url":"/novice/currencycount","content":"幣別點數"},
+                    {"category":"novice","page":"tradingsystem","url":"/novice/tradingsystem","content":"交易系統"},
+                    {"category":"novice","page":"officialversioninstall","url":"/novice/officialversioninstall","content":"官方版本安裝"},
+                    {"category":"novice","page":"chat","url":"/novice/chat","content":"聊天功能"},
+                    {"category":"novice","page":"levelsystem","url":"/novice/levelsystem","content":"等級系統"},
+                    {"category":"novice","page":"memberpopularity","url":"/novice/memberpopularity","content":"會員人氣值"},
+                    {"category":"novice","page":"winningsintroduction","url":"/novice/winningsintroduction","content":"彩金介紹"},
+                    {"category":"novice","page":"propsvirtualtreasuresystem","url":"/novice/propsvirtualtreasuresystem","content":"道具虛寶系統"},
+                    {"category":"novice","page":"historynumoftable","url":"/novice/historynumoftable","content":"歷史轉數表"},
+                    {"category":"novice","page":"vippreferential","url":"/novice/vippreferential","content":"VIP卡別優惠"},
+
+                    {"category":"tryout","page":"alltryout","url":"/tryout/alltryout","content":"所有試玩"},
+                    {"category":"tryout","page":"turnroundhall","url":"/tryout/turnroundhall","content":"轉輪館"},
+                    {"category":"tryout","page":"saobaiqing","url":"/tryout/saobaiqing","content":"柏青嫂"},
+                    {"category":"tryout","page":"electrichouse","url":"/tryout/electrichouse","content":"電子館"},
+                    {"category":"tryout","page":"classicstyle","url":"/tryout/classicstyle","content":"經典款"},
+
+                    {"category":"giftpoint","page":"giftpointofpurchase","url":"/giftpoint/giftpointofpurchase","content":"儲值購點"},
+                    {"category":"giftpoint","page":"numberloss","url":"/giftpoint/platform","content":"平台轉換遊戲點數"},
+                    {"category":"giftpoint","page":"reflux","url":"/giftpoint/reflux","content":"序號儲值兌換"},
+                    {"category":"giftpoint","page":"officialwebsite","url":"/giftpoint/officialwebsite","content":"交易轉點中心"}
+
+                   ]
+}

@@ -1,0 +1,2269 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	font-size: 13px;
+	font-family: arial, helvetica, clean, sans-serif;
+	color: #000;
+	line-height: 1.8em;
+	background-color: #000000;
+}
+img {
+	border: 0px;
+}
+img a {
+	border: 0px;
+}
+ul, li {
+	margin: 0px;
+	padding: 0px; list-style: none;
+}
+p {
+	padding-bottom: 2em;
+	padding-top: 0px;
+	margin: 0px;
+}
+a {
+	color: #000000;
+	border: none;
+	text-decoration: none;
+}
+a:hover{
+	color: #900;
+	text-decoration: none;
+}
+
+h1{
+	margin: 0px;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: "ÂæÆË?Ê≠??È´?, "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #FFFFFF;
+}
+h2{
+	margin: 0px;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: "ÂæÆË?Ê≠??È´?, "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #E898FC;
+}
+h3{
+	margin: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "ÂæÆË?Ê≠??È´?, "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #f3e6d0;
+}
+
+.txt_style_1{
+	color: #F00;
+	font-weight: bold;
+}
+.txt_style_2{
+	color: #ed7b00;
+	font-weight: bold;
+}
+
+
+
+/******‰∏ªË??ØÂ?*******/
+.index_bg_re{
+	min-width: 1200px;
+	width: auto;
+	height: auto;
+	background-image: url(../images/templates_index/index_bg_re.jpg);
+	background-repeat: repeat;
+	background-position: center top;
+	position: relative;
+	display: block;
+}
+.index_bg_bg{
+	min-width: 1200px;
+	width: auto;
+	height: auto;
+	background-image: url(../images/templates_index/index_bg_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: center top;
+	position: relative;
+	display: block;
+}
+.index_main_img{
+	min-width: 1200px;
+	width: auto;
+	height: auto;
+	background-image: url(../images/templates_index/index_main_img.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: relative;
+	display: block;
+}
+
+/******?ÇÈÉ®?ÄÂ°?*****/
+.header{
+	height: auto;
+	width: auto;
+	display: block;
+	text-align: left;
+}
+.header_container{
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 264px;
+	display: block;
+}
+.header .logo{
+	display: block;
+	float: left;
+	height: 230px;
+	width: 390px;
+	padding-top: 10px;
+	padding-left: 10px;
+
+}
+.header .logo a{
+	display: block;
+	height: 230px;
+	width: 390px;
+	background-image: url(../images/templates_index/logo.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.header .logo a:hover{
+	display: block;
+	height: 230px;
+	width: 390px;
+	background-image: url(../images/templates_index/logo.png);
+	background-repeat: no-repeat;
+	background-position: left -230px;
+}
+.header_info{
+	display: block;
+	float: left;
+	width: 242px;
+	height: auto;
+	padding-top: 40px;
+	padding-left: 130px;
+}
+.header a.header_btn_demo{
+	display: block;
+	background-image: url(../images/common/header_btn_demo.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 190px;
+	width: 190px;
+}
+.header a:hover.header_btn_demo {
+	display: block;
+	background-image: url(../images/common/header_btn_demo.png);
+	background-repeat: no-repeat;
+	background-position: left -190px;
+	height: 190px;
+	width: 190px;
+}
+.header a.header_btn_playnow{
+	display: block;
+	background-image: url(../images/common/header_btn_playnow.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 190px;
+	width: 190px;
+}
+.header a:hover.header_btn_playnow {
+	display: block;
+	background-image: url(../images/common/header_btn_playnow.png);
+	background-repeat: no-repeat;
+	background-position: left -190px;
+	height: 190px;
+	width: 190px;
+}
+.header a.header_btn_playgame{
+	display: block;
+	background-image: url(../images/common/header_btn_playgame.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 49px;
+	width: 160px;
+}
+.header a:hover.header_btn_playgame {
+	display: block;
+	background-image: url(../images/common/header_btn_playgame.png);
+	background-repeat: no-repeat;
+	background-position: left -49px;
+	height: 49px;
+	width: 160px;
+}
+.scrolling_text{
+	display: block;
+	background-image: url(../images/common/scrolling_text_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 38px;
+	width: 1184px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 8px;
+}
+.scrolling_text_container{
+	display: block;
+	height: 26px;
+	width: 1020px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #FFF;
+}
+.ann{overflow:hidden;float:left;display:block;}
+.box{
+	height:20px;
+	width:auto;
+}
+span.all_txt {
+	margin-right: 100px;
+	line-height: 26px;
+	font-size: 16px;
+}
+span.user_name_txt{color: #ff0000;}
+span.gp_txt{color: #ffe554;}
+
+
+/******* Ëº™Êí≠Banner ********/
+.event_banner{
+	height: 363px;
+	width: 1173px;
+	display: block;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../images/templates_index/event_banner/event_banner_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top: 10px;
+	padding-left: 11px;
+}
+
+	#abgneBlock {
+	width: 1160px;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	}
+	#abgneBlock .box_line{
+	border: 1 solid #CCC;
+	height: 160px;
+	width: 384px;
+	display: block;
+	position: relative;
+}
+	#abgneBlock ul.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	width: 9999px;
+	height: 350px;
+	}
+	#abgneBlock ul.list li {
+	float: left;
+	width: 1160px;
+	height: 350px;
+	}
+	#abgneBlock .list img{
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+	#abgneBlock ul.playerControl {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	height: 35px;
+	}
+	#abgneBlock ul.playerControl li {
+	float: left;
+	width: 34px;
+	height: 35px;
+	cursor: pointer;
+	background-image: url(../images/templates_index/event_banner/control_ico.png);
+	background-repeat: no-repeat;
+	background-position: -34px 0;
+	margin-top: 0px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+	}
+	#abgneBlock ul.playerControl li.current { 
+		background-position: 0 0;
+	}
+
+
+
+/******‰∏≠È??ÄÂ°?*****/
+.main_board_container_bg{
+	width: auto;
+	display: block;
+	height: auto;
+}
+.main_board_container{
+	width: auto;
+	display: block;
+	height: auto;
+	/*background-image: url(../images/templates_index/main_board_container_t_img.png);*/
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-bottom: 60px;
+	padding-top: 0px;
+}
+.m_container{
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 1200px;
+}
+.sidebar1{
+	height: auto;
+	display: block;
+	float: left;
+	width: 218px;
+	padding-left: 8px;
+}
+.sidebar2{
+	height: auto;
+	width: 966px;
+	display: block;
+	margin-bottom: 12px;
+	float: left;
+}
+.sidebar2_l{
+	height: auto;
+	display: block;
+	width: 574px;
+	float: left;
+	padding-top: 374px;
+}
+
+
+/*******?Ä?∞ÁÜ±?ÄÊ©üÂè∞********/
+.hot_slot_game{
+	display: block;
+	padding-bottom: 14px;
+}
+.hot_slot_game .hot_slot_title_container{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_title.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 957px;
+	padding-top: 7px;
+	padding-right: 9px;
+}
+.hot_slot_game .hot_slot_title_container .n_more{
+	display: block;
+	height: 29px;
+	width: 76px;
+	float: right;
+}
+.hot_slot_game .hot_slot_title_container .n_more a{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/menu_more.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 29px;
+	width: 76px;
+}
+.hot_slot_game .hot_slot_title_container .n_more a:hover{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/menu_more.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+	height: 29px;
+	width: 76px;
+}
+.hot_slot_m_container {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_m_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 454px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 40px;
+}
+.hot_slot_m_container ul li{
+	display: block;
+}
+.hot_slot_m_container ul .game_icon_mayan {
+	display: block;
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 12px;
+	position:relative;
+}
+.hot_slot_m_container ul .game_icon_mayan a {
+	display: block;
+	background-image: url(../images/game/mayan_adventure/mayan_icon_off.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+}
+.hot_slot_m_container ul .game_icon_mayan a:hover {
+	display: block;
+	background-image: url(../images/game/mayan_adventure/mayan_icon_on.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+}
+.hot_slot_m_container ul .game_icon_mayan #text
+{
+    z-index:1;
+    position:absolute;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    left:60px;
+    top:80px;
+    opacity: 1;
+}
+
+.hot_slot_m_container ul .game_icon_sea_paradise {
+	display: block;
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 12px;
+	position:relative;
+}
+.hot_slot_m_container ul .game_icon_sea_paradise a {
+	display: block;
+	background-image: url(../images/game/sea_paradise/sea_paradise_icon_off.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_sea_paradise a:hover {
+	display: block;
+	background-image: url(../images/game/sea_paradise/sea_paradise_icon_on.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_sea_paradise #text
+{
+    z-index:1;
+    position:absolute;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    left:60px;
+    top:80px;
+    opacity: 1;
+}
+
+.hot_slot_m_container ul .game_icon_gowin_car {
+	display: block;
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 12px;
+	position:relative;
+}
+.hot_slot_m_container ul .game_icon_gowin_car a {
+	display: block;
+	background-image: url(../images/game/gowin_car/gowin_car_icon_off.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_gowin_car a:hover {
+	display: block;
+	background-image: url(../images/game/gowin_car/gowin_car_icon_on.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_gowin_car #text
+{
+    z-index:1;
+    position:absolute;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    left:60px;
+    top:80px;
+    opacity: 1;
+}
+
+.hot_slot_m_container ul .game_icon_general_bio {
+	display: block;
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 12px;
+	position:relative;
+}
+.hot_slot_m_container ul .game_icon_general_bio a {
+	display: block;
+	background-image: url(../images/game/general_bio/general_bio_icon_off.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_general_bio a:hover {
+	display: block;
+	background-image: url(../images/game/general_bio/general_bio_icon_on.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_general_bio #text
+{
+    z-index:1;
+    position:absolute;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    left:60px;
+    top:80px;
+    opacity: 1;
+}
+
+.hot_slot_m_container ul .game_icon_hunt_magic_tower {
+	display: block;
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 12px;
+	position:relative;
+}
+.hot_slot_m_container ul .game_icon_hunt_magic_tower a {
+	display: block;
+	background-image: url(../images/game/hunt_magic_tower/hunt_magic_tower_icon_off.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_hunt_magic_tower a:hover {
+	display: block;
+	background-image: url(../images/game/hunt_magic_tower/hunt_magic_tower_icon_on.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_hunt_magic_tower #text
+{
+    z-index:1;
+    position:absolute;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    left:60px;
+    top:80px;
+    opacity: 1;
+}
+
+.hot_slot_m_container ul .game_icon_qiao_fortuna {
+	display: block;
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 12px;
+	position:relative;
+}
+.hot_slot_m_container ul .game_icon_qiao_fortuna a {
+	display: block;
+	background-image: url(../images/game/qiao_fortuna/qiao_fortuna_icon_off.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_qiao_fortuna a:hover {
+	display: block;
+	background-image: url(../images/game/qiao_fortuna/qiao_fortuna_icon_on.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_qiao_fortuna #text
+{
+    z-index:1;
+    position:absolute;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    left:60px;
+    top:80px;
+    opacity: 1;
+}
+
+.hot_slot_m_container ul .game_icon_caocao_bio {
+	display: block;
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 12px;
+	position:relative;
+}
+.hot_slot_m_container ul .game_icon_caocao_bio a {
+	display: block;
+	background-image: url(../images/game/caocao_bio/caocao_bio_icon_off.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_caocao_bio a:hover {
+	display: block;
+	background-image: url(../images/game/caocao_bio/caocao_bio_icon_on.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 200px;
+	width: 200px;
+
+	/*opacity: 0.5;
+  left:0;
+  top:0;*/
+}
+.hot_slot_m_container ul .game_icon_caocao_bio #text
+{
+    z-index:1;
+    position:absolute;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    left:60px;
+    top:80px;
+    opacity: 1;
+}
+
+/*******Â∏≥Ë??≥Ë?********/
+.hot_slot_game {
+	display: block;
+	padding-bottom: 14px;
+}
+.hot_slot_game .hot_slot_title_create_account {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_title_account.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 957px;
+	padding-top: 7px;
+	padding-right: 9px;
+}
+.hot_slot_game .hot_slot_create_account .n_more {
+	display: block;
+	height: 29px;
+	width: 76px;
+	float: right;
+}
+.hot_slot_game .hot_slot_create_account .n_more a {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/menu_more.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 29px;
+	width: 76px;
+}
+.hot_slot_game .hot_slot_create_account .n_more a:hover {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/menu_more.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+	height: 29px;
+	width: 76px;
+}
+.hot_slot_create_account {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_create_account.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+}
+.hot_slot_create_account ul li{display: block;}
+.hot_slot_create_account ul .game_icon_index_1 {
+	display: block;
+	float: left;
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+.hot_slot_create_account ul .game_icon_index_1 a {
+	display: block;
+	background-image: url(../images/game/game_1/game_icon_index.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 205px;
+	width: 170px;
+}
+.hot_slot_game .hot_slot_passwd_query .n_more {
+	display: block;
+	height: 29px;
+	width: 76px;
+	float: right;
+}
+.hot_slot_game .hot_slot_passwd_query .n_more a {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/menu_more.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 29px;
+	width: 76px;
+}
+.hot_slot_game .hot_slot_passwd_query .n_more a:hover {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/menu_more.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+	height: 29px;
+	width: 76px;
+}
+.hot_slot_passwd_query {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_passwd_query.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+}
+.hot_slot_passwd_query ul li{display: block;}
+.hot_slot_passwd_query ul .game_icon_index_1 {
+	display: block;
+	float: left;
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+.hot_slot_passwd_query ul .game_icon_index_1 a {
+	display: block;
+	background-image: url(../images/game/game_1/game_icon_index.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 205px;
+	width: 170px;
+}
+/*******ÂÆ¢Ê?‰∏≠Â?********/
+.hot_slot_game {
+	display: block;
+	padding-bottom: 14px;
+}
+.hot_slot_game .hot_slot_title_customer_service {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_title_customer_service.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 957px;
+	padding-top: 7px;
+	padding-right: 9px;
+}
+.hot_slot_game .hot_slot_customer_service_online .n_more{
+	display: block;
+	height: 29px;
+	width: 76px;
+	float: right;
+}
+.hot_slot_game .hot_slot_customer_service_online .n_more a{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/menu_more.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 29px;
+	width: 76px;
+}
+.hot_slot_game .hot_slot_customer_service_online .n_more a:hover{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/menu_more.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+	height: 29px;
+	width: 76px;
+}
+.hot_slot_faq{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_customer_service_FAQ.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+}
+	.hot_slot_cso{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_cso.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+
+}
+.hot_slot_customer_service_online ul li{display: block;}
+.hot_slot_customer_service_online ul .game_icon_index_1{
+	display: block;
+	float: left;
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+.hot_slot_customer_service_online ul .game_icon_index_1 a{
+	display: block;
+	background-image: url(../images/game/game_1/game_icon_index.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 205px;
+	width: 170px;
+}
+/*****Ë©¶Áé©È´îÈ?*****/
+
+.hot_slot_game .hot_slot_title_demo{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_title_demo.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 957px;
+	padding-top: 7px;
+	padding-right: 9px;
+
+}
+	.hot_slot_demo_01{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_demo_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_demo_01{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_demo_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_demo_02{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_demo_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_demo_02{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_demo_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+	.hot_slot_demo_03{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_demo_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_demo_03{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_demo_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+}
+	.hot_slot_demo_04{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_demo_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_demo_04{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_demo_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+}
+	.hot_slot_demo_05{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_demo_05.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_demo_05{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_demo_05.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+}
+/*****Ë©¶Áé©È´îÈ?*****/
+
+.hot_slot_game .hot_slot_title_novice{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_title_novice.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 957px;
+	padding-top: 7px;
+	padding-right: 9px;
+
+}
+	.hot_slot_novice_01{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_01{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_novice_02{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_02{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+	.hot_slot_novice_03{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_03{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_novice_04{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_04{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_novice_05{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_05.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_05{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_05.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_novice_06{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_06.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_06{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_06.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_novice_07{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_07.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_07{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_07.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_novice_08{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_08.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_08{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_08.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_novice_09{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_09.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_09{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_09.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_novice_10{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_10.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_10{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_10.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_novice_11{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_11.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_novice_11{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_novice_11.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+/*****?≤ÂÄºË?Èª?****/
+
+.hot_slot_game .hot_slot_title_deposit{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_title_deposit.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 957px;
+	padding-top: 7px;
+	padding-right: 9px;
+
+}
+	.hot_slot_deposit_01{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_deposit_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_deposit_01{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_deposit_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.hot_slot_deposit_02{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_deposit_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_deposit_02{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_deposit_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.hot_slot_deposit_03{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_deposit_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_deposit_03{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_deposit_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.hot_slot_deposit_04{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_deposit_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_deposit_04{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_deposit_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+/*****?äÊà≤‰ªãÁ¥π*****/
+
+.hot_slot_game .hot_slot_title_introduction{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_title_introduction.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 957px;
+	padding-top: 7px;
+	padding-right: 9px;
+
+}
+	.hot_slot_introduction_01{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_introduction_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_introduction_01{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_introduction_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.hot_slot_introduction_02{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_introduction_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_introduction_02{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_introduction_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.hot_slot_introduction_03{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_introduction_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_introduction_03{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_introduction_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.hot_slot_introduction_04{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_introduction_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_introduction_04{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_introduction_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.hot_slot_introduction_05{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_introduction_05.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_introduction_05{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_introduction_05.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+/*****?ëÈëΩ?ç‰∫∫Ê¶?****/
+
+.hot_slot_game .hot_slot_title_rank{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_title_rank.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 957px;
+	padding-top: 7px;
+	padding-right: 9px;
+
+}
+	.hot_slot_rank_01{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_rank_01{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_rank_02{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_rank_02{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_rank_03{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_rank_03{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_rank_04{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_rank_04{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_rank_05{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_05.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_rank_05{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_05.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_rank_06{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_06.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_rank_06{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_06.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_rank_07{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_07.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_rank_07{
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_rank_07.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.hot_slot_game .hot_slot_title_member {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_title_member.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 957px;
+	padding-top: 7px;
+	padding-right: 9px;
+}
+
+	.hot_slot_member_01 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_member_01 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_member_02 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_member_02 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_member_03 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_member_03 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_member_04 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_member_04 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_member_05 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_05.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_member_05 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_05.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_member_06 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_06.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_member_06 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_06.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_member_07 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_07.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_member_07 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_member_07.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+/*****?Ä?∞ÂÖ¨??****/
+.hot_slot_game .hot_slot_title_news {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_title_news.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 957px;
+	padding-top: 7px;
+	padding-right: 9px;
+}
+	.hot_slot_news_01 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_news_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	}
+.hot_slot_news_01 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_news_01.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_news_02 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_news_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_news_02 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_news_02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_news_03 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_news_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_news_03 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_news_03.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+	.hot_slot_news_04 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_news_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+	}
+.hot_slot_news_04 {
+	display: block;
+	background-image: url(../images/templates_index/hot_slot/hot_slot_news_04.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 992px;
+	width: 938px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+/*****?¨Â?Ê®ôÁ±§*****/
+
+.title_container {
+	height: 36px;
+	width: 957px;
+	background-image: url(../images/templates_index/news/news_title.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	padding-top: 7px;
+	padding-right: 9px;
+}
+
+.news_m_container {
+	clear: left;
+	width: 926px;
+	padding-left: 20px;
+	padding-top: 16px;
+	padding-right: 20px;
+	height: 170px;
+	background-image: url(../images/templates_index/news/news_m_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.title_container ul.tabs .menu1 {
+	background-image: url(../images/templates_index/news/news_menu_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.title_container ul.tabs .menu1 a {
+	display: block;
+	height: 29px;
+	width: 92px;
+}
+.title_container ul.tabs .menu1.active {
+	background-image: url(../images/templates_index/news/news_menu_1.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+}
+.title_container ul.tabs .menu2 {
+	background-image: url(../images/templates_index/news/news_menu_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.title_container ul.tabs .menu2 a {
+	display: block;
+	height: 29px;
+	width: 92px;
+}
+.title_container ul.tabs .menu2.active {
+	background-image: url(../images/templates_index/news/news_menu_2.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+}
+.title_container ul.tabs .menu3{
+	background-image: url(../images/templates_index/news/news_menu_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs .menu3 a {
+	display: block;
+	height: 29px;
+	width: 92px;
+}
+.title_container ul.tabs .menu3.active {
+	background-image: url(../images/templates_index/news/news_menu_3.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+}
+.title_container ul.tabs .menu4 {
+	background-image: url(../images/templates_index/news/news_menu_4.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs .menu4 a {
+	display: block;
+	height: 29px;
+	width: 92px;
+}
+.title_container ul.tabs .menu4.active {
+	background-image: url(../images/templates_index/news/news_menu_4.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+}
+.title_container ul.tabs .menu5 {
+	background-image: url(../images/templates_index/news/news_menu_5.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs .menu5 a {
+	display: block;
+	height: 29px;
+	width: 96px;
+}
+.title_container ul.tabs .menu5.active {
+	background-image: url(../images/templates_index/news/news_menu_5.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+}
+
+ul.tabs .n_more {
+	display: block;
+	height: 29px;
+	width: 76px;
+	float: left;
+}
+ul.tabs .n_more a {
+	display: block;
+	height: 29px;
+	width: 76px;
+	background-image: url(../images/templates_index/news/menu_more.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+ul.tabs .n_more a:hover {
+	display: block;
+	height: 29px;
+	width: 76px;
+	background-image: url(../images/templates_index/news/menu_more.png);
+	background-repeat: no-repeat;
+	background-position: left -29px;
+}
+
+.abgne_tab {
+	clear: left;
+}
+ul.tabs {
+	width: auto;
+	height: auto;
+	display: block;
+	padding-left: 0px;
+	float: right;
+}
+ul.tabs li {
+	float: left;
+	height: 29px;
+	line-height: 29px;
+	font-size: 12px;
+	text-align: center;
+	width: auto;
+	list-style-position: outside;
+	list-style-type: none;
+	display: block;
+	margin-right: 6px;
+}
+ul.tabs li a {
+	text-decoration: none;
+}
+
+div.tab_container {
+	/*clear: left;*/
+	width: 100%;
+}
+div.tab_container .tab_content {
+	height: 176px;
+}
+
+
+/**?¨Â?Ê¢ùÁõÆ**/
+ul.news_list_index {
+	margin-left: 0px;
+	height: auto;
+	margin-right: 0px;
+	display: block;
+	padding-top: 2px;
+	width: auto;
+}
+ul.news_list_index li {
+	list-style-position: outside;
+	list-style-type: none;
+	background-image: url(../images/common/news_line_1.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	width: auto;
+	margin: 0px;
+	display: block;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	line-height: 21px;
+}
+ul.news_list_index li a {
+	height: auto;
+	color: #000;
+	width: auto;
+}
+ul.news_list_index li a:hover {
+	height: auto;
+	color: #660000;
+}
+ul.news_list_index li .news_class {
+	float: left;
+	width: 65px;
+	margin-right: 10px;
+	height: 19px;
+	}
+ul.news_list_index li .news_class .news_icon_1 {
+	background-image: url(../images/common/news_icon_bg_1.png);
+	background-repeat: no-repeat;
+	width: 65px;
+	line-height: normal;
+	color: #FFF;
+	text-align: center;
+	height: 19px;
+}
+ul.news_list_index li .news_class .news_icon_2 {
+	background-image: url(../images/common/news_icon_bg_2.png);
+	background-repeat: no-repeat;
+	width: 65px;
+	line-height: 21px;
+	color: #FFF;
+	text-align: center;
+	height: 19px;
+}
+ul.news_list_index li .news_class .news_icon_3 {
+	background-image: url(../images/common/news_icon_bg_3.png);
+	background-repeat: no-repeat;
+	width: 65px;
+	line-height: 19px;
+	color: #FFF;
+	text-align: center;
+	height: 19px;
+}
+ul.news_list_index li .news_class .news_icon_6 {
+	background-image: url(../images/common/news_icon_bg_6.png);
+	background-repeat: no-repeat;
+	width: 56px;
+	line-height: 19px;
+	color: #FFF;
+	text-align: center;
+	height: 19px;
+}
+ul.news_list_index li .news_class .news_icon_8 {
+	background-image: url(../images/common/news_icon_bg_8.png);
+	background-repeat: no-repeat;
+	width: 57px;
+	line-height: 19px;
+	color: #FFF;
+	text-align: center;
+	height: 21px;
+}
+
+ul.news_list_index li .news_subject {
+	float: left;
+	width: 360px;
+	height: auto;
+	font-size: 12px;
+	margin: 0px;
+	line-height: 20px;
+	text-overflow : ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+
+ul.news_list_index li .news_date {
+	float: right;
+	font-family: "ÂæÆË?Ê≠??È´?, "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	width: 80px;
+	line-height: 20px;
+	height: auto;
+	color: #666666;
+}
+
+.abgne_tab_2 {
+	clear: left;
+}
+ul.tabs_2 {
+	width: auto;
+	height: auto;
+	display: block;
+	padding-left: 0px;
+	float: left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #000000;
+}
+ul.tabs_2 li {
+	float: left;
+	height: 34px;
+	line-height: 22px;
+	font-size: 12px;
+	text-align: center;
+	width: auto;
+	list-style-position: outside;
+	list-style-type: none;
+	display: block;
+	margin-right: 0px;
+}
+ul.tabs_2 li a {
+	text-decoration: none;
+}
+
+div.tab_container {
+	/*clear: left;*/
+	width: 100%;
+}
+div.tab_container .tab_content {
+	height: 176px;
+}
+
+.footer {
+	height: 140px;
+	width: auto;
+	background-image: url(../images/footer/footer_bg_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.footer_container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	padding-top: 32px;
+	background-image: url(../images/footer/footer_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.footer_container .copyright_logo {
+	float: left;
+	background-image: url(../images/footer/me2_logo.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 74px;
+	width: 160px;
+	margin-left: 40px;
+}
+.footer_container .copyright_logo a {
+	float: left;
+	height: 74px;
+	width: 160px;
+	display: block;
+}
+.footer_container .research_logo {
+	float: left;
+	background-image: url(../images/templates_index/research_logo.png);
+	background-repeat: no-repeat;
+	background-position: 10px 8px;
+	display: block;
+	width: 150px;
+	height: 50px;
+	margin-left: 20px;
+}
+.footer_container .research_logo a{float: left;}
+.footer_container .copyright_txt {
+	font-size: 12px;
+	color: #c7a85d;
+	float: left;
+	height: auto;
+	width: 800px;
+	text-align: center;
+	padding-top: 0px;
+	line-height: 1.5em;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.footer_container .copyright_txt .link {
+	display: block;
+	font-size: 16px;
+	padding-bottom: 12px;
+}
+.footer_container .copyright_txt .link a {
+	color: #c7a85d;
+}
+.footer_container .copyright_txt .link a:hover {
+	color: #FFF;
+}
+.footer_container .classification {
+	background-image: url(../images/footer/classification.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	height: 48px;
+	width: 48px;
+	float: right;
+	margin-right: 40px;
+	margin-top: 10px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+	background-color: #CCC;
+}

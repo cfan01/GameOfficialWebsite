@@ -1,0 +1,52 @@
+@charset "utf-8";
+.tickercontainer { /* the outer div with the black border */
+	border: 0;
+	width: auto; 
+	height: 26px; 
+	margin: 0; 
+	padding: 0
+	overflow: hidden; 
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1020px;
+	overflow: hidden;
+}
+
+ul.newsticker { /* that's your list */
+	position: relative;
+	left: 0px;
+	width: auto; 
+	font-size: 12px;
+	font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.newsticker li {
+	display: block;
+	float: left; 
+	margin: 0;
+	padding: 0px ;
+	height: 26px; 
+	line-height: 26px; 
+	font-size: 12px;
+	font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+}
+ul.newsticker a {
+	color: #ff0000;
+} 
+ul.newsticker span {
+	margin: 0;
+} 
+ul.newsticker span.all_txt {
+	margin-right: 100px;
+} 
+span.all_txt {
+	margin-right: 100px;
+} 
+ul.newsticker span.user_name_txt{color: #ff0000;}
+ul.newsticker span.gp_txt{color: #ffe554;}
